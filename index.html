@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LS-Paint</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="alphaCounter"></div>
+<label for="ALPHA"></label><input type="range" step="0.1" min="0" max="1" value="1" class="slider" id="ALPHA">
+<div id="canvasBox">
+    <canvas id="canvas" width="800" height="600" onmousedown="mouseDownEvent()" onmouseup="mouseUpEvent()"></canvas>
+</div>
+
+
+<div class="slideContainer">
+    <div id="redCounter"></div>
+    <label for="RED"></label><input type="range" min="0" max="255" value="50" class="slider" id="RED">
+    <div id="greenCounter"></div>
+    <label for="GREEN"></label><input type="range" min="0" max="255" value="50" class="slider" id="GREEN">
+    <div id="blueCounter"></div>
+    <label for="BLUE"></label><input type="range" min="0" max="255" value="50" class="slider" id="BLUE">
+</div>
+
+<div id="brushSizeBox">
+    <div id="brushSizeCounter"></div>
+    <label for="brushSize"></label><input type="range" min="0" max="100" value="5" class="slider" id="brushSize">
+    <div id="colorDisplay"></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
