@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+}
+
+#brushSizeBox {
+    position: relative;
+    left: 200px;
+    top: -148px;
+}
+
+#canvas {
+    border: solid 1px;
+}
+
+#colorDisplay {
+    width: 50px;
+    height: 50px;
+    border: solid 1px;
+    margin-top: 5px;
+}
+
+.slideContainer {
+    width: 155px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 15px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
